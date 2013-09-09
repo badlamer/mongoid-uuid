@@ -1,5 +1,7 @@
 ## Mongoid UUID
 
+[![Build Status](https://travis-ci.org/badlamer/mongoid-uuid.png)](https://travis-ci.org/badlamer/mongoid-uuid)
+
 Provide uuid minix for mongoid models version < 4.0
 
 ### Installation
@@ -7,3 +9,4 @@ Provide uuid minix for mongoid models version < 4.0
 ```ruby
 gem install mongoid-uuid
 ```
+
