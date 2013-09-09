@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
-
 gemspec
 
-gem 'ruby_gntp', '>= 0.3.4'
 gem "rake"
 
 group :test do
