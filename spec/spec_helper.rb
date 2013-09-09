@@ -6,6 +6,15 @@ require 'mongoid/uuid'
 
 require 'rspec'
 
+if ENV["CI"]
+  require "simplecov"
+  require "coveralls"
+  SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+  SimpleCov.start do
+    add_filter "spec"
+  end
+end
+
 Mongoid.configure do |config|
   config.connect_to('mongoid_uuid_test')
 end
