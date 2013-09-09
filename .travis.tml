@@ -1,0 +1,15 @@
+before_install:
+  - gem update --system
+  - gem --version
+language: ruby
+rvm:
+  - ruby-head
+  - 1.9.3
+  - 2.0.0
+  - jruby-19mode
+  - rbx-19mode
+services:
+  - mongodb
+matrix:
+  allow_failures:
+    - rvm: ruby-head
