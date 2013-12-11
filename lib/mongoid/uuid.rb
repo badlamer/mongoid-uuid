@@ -1,6 +1,7 @@
 # encoding: utf-8
 require "uuid"
 require "mongoid"
+require "mongoid/uuid/version"
 require "mongoid/uuid/uuid"
 require "mongoid/uuid/validator"
 
