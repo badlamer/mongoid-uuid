@@ -1,6 +1,6 @@
 # Mongoid::Uuid
 
-[![Build Status](https://travis-ci.org/badlamer/mongoid-uuid.png)](https://travis-ci.org/badlamer/mongoid-uuid) [![Coverage Status](https://coveralls.io/repos/badlamer/mongoid-uuid/badge.png?branch=master)](https://coveralls.io/r/badlamer/mongoid-uuid?branch=master)
+[![Build Status](https://travis-ci.org/badlamer/mongoid-uuid.png)](https://travis-ci.org/badlamer/mongoid-uuid) [![Coverage Status](https://coveralls.io/repos/badlamer/mongoid-uuid/badge.png?branch=master)](https://coveralls.io/r/badlamer/mongoid-uuid?branch=master) [![Gem Version](https://badge.fury.io/rb/mongoid-uuid.png)](http://badge.fury.io/rb/mongoid-uuid)
 
 Создаёт фиксированное UUID поле для моделей mongoid < 4.0
 
