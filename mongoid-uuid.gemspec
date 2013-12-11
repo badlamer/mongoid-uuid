@@ -2,9 +2,11 @@
 lib = File.expand_path("../lib/", __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
+require "mongoid/uuid/version"
+
 Gem::Specification.new do |s|
   s.name = "mongoid-uuid"
-  s.version = "0.0.1"
+  s.version = Mongoid::Uuid::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors = ["Druzkov Yuri, Kovalenko Alexandr"]
   s.email = ["bad1lamer@gmail.com"]
