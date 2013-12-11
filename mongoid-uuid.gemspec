@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name = "mongoid-uuid"
   s.version = Mongoid::Uuid::VERSION
   s.platform = Gem::Platform::RUBY
-  s.authors = ["Druzkov Yuri, Kovalenko Alexandr"]
+  s.authors = ["Yuri Druzkov"]
   s.email = ["bad1lamer@gmail.com"]
   s.homepage = "http://github.com/badlamer/mongoid-uuid"
   s.summary = "Uuid fields for mongoid"
