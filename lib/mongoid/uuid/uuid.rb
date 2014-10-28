@@ -8,7 +8,7 @@ module Mongoid # :nodoc:
         field :uuid
         index({:uuid => 1}, {:unique => true})
         before_validation :generate_uuid
-        validates :uuid, :uniqueness => true, :uuid => false
+        validates :uuid, :uniqueness => true, :uuid => true
         attr_readonly :uuid
       end
 
@@ -16,9 +16,7 @@ module Mongoid # :nodoc:
 
       # Sets unique UUID unless uuid is present.
       def generate_uuid
-        if [nil, ""].include?(uuid)
-          self.uuid = UUID.generate
-        end
+        self.uuid = UUID.generate if uuid.to_s.empty?
       end
     end
   end

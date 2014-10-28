@@ -3,6 +3,7 @@ require 'bundler/setup'
 
 require 'mongoid'
 require 'mongoid/uuid'
+require 'mongoid-rspec'
 
 require 'rspec'
 
@@ -19,7 +20,7 @@ Mongoid.configure do |config|
   config.connect_to('mongoid_uuid_test')
 end
 
-require "model"
+require 'model'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|

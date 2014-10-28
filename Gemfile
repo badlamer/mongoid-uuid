@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 gemspec
 
+gem "mongoid", ">= 3"
 gem "rake"
 
 group :test do
-  gem "rspec", "~> 2.14"
+  gem "rspec"
 
   if ENV["CI"]
     gem "coveralls", require: false

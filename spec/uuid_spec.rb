@@ -10,22 +10,20 @@ describe Mongoid::Uuid do
     end
 
     it "create with generated uuid" do
-      uuid = UUID.generate;
+      uuid = UUID.generate
       item = ItemWithUuid.create!(name: 'foo', uuid: uuid)
       expect(item.uuid).to eq(uuid)
     end
 
     it "create with invalid uuid exception" do
-      invalid_uuid = 'baz-baz'
+      invalid_uuid = 'baz-baz1'
       expect {
-
         ItemWithUuid.create!(name: 'foo', uuid: invalid_uuid)
-
       }.to raise_error(Mongoid::Errors::Validations)
     end
 
     it "create with invalid uuid" do
-        invalid_uuid = 'baz-baz'
+        invalid_uuid = 'baz-baz2'
         expect(ItemWithUuid.create(name: 'foo', uuid: invalid_uuid).valid?).to eq(false)
     end
 
