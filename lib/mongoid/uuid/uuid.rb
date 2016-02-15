@@ -12,6 +12,17 @@ module Mongoid # :nodoc:
         attr_readonly :uuid
       end
 
+      module ClassMethods
+        def uuid_options(*fields)
+          options = fields.extract_options!
+
+          if options[:background_index]
+            index_spec = index_specification(uuid: 1)
+            index_spec.options[:background] = true
+          end
+        end
+      end
+
       private
 
       # Sets unique UUID unless uuid is present.
