@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 gemspec
 
-gem "mongoid", ">= 3"
-gem "rake"
-
 group :test do
   gem "rspec"
 

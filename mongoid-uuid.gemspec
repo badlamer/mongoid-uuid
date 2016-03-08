@@ -20,12 +20,12 @@ Gem::Specification.new do |s|
   s.rubyforge_project = 'mongoid-uuid'
 
   s.add_runtime_dependency 'uuid', '~> 2.3'
-  s.add_dependency 'yard'
-  s.add_dependency 'rake'
-  s.add_dependency 'mongoid', '>= 3.0'
-  s.add_dependency 'rspec', '~> 3.0'
-  s.add_dependency 'mongoid-rspec', '~> 2.0.0.rc1'
+  s.add_dependency 'mongoid', '>= 3.0', '< 6'
 
+  s.add_development_dependency 'yard'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'mongoid-rspec', '~> 3.0'
 
   s.files = Dir.glob('lib/**/*')# + %w(CHANGELOG.md LICENSE README.md
   s.test_files = Dir.glob('spec/**/*')
