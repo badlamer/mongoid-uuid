@@ -7,8 +7,6 @@ RSpec::Core::RakeTask.new(:spec)
 
 task default: :spec
 
-YARD::Rake::YardocTask.new(:doc)
-
 desc 'Build the .gem file'
 task :build do
   system "gem build #{spec.name}.gemspec"
