@@ -6,9 +6,9 @@ module Mongoid # :nodoc:
 
       included do
         field :uuid
-        index({:uuid => 1}, {:unique => true})
+        index({ uuid: 1 }, unique: true)
         before_validation :generate_uuid
-        validates :uuid, :uniqueness => true, :uuid => true
+        validates :uuid, uniqueness: true, uuid: true
         attr_readonly :uuid
       end
 

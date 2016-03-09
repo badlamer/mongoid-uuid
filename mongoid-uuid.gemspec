@@ -1,6 +1,6 @@
 # encoding: utf-8
 lib = File.expand_path('../lib/', __FILE__)
-$:.unshift lib unless $:.include?(lib)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 
 require 'mongoid/uuid/version'
 
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.description = ''
   s.license = 'MIT'
 
-  s.required_ruby_version = '>= 1.9'
+  s.required_ruby_version = '>= 2.0'
   s.required_rubygems_version = '>= 1.3.6'
   s.rubyforge_project = 'mongoid-uuid'
 
@@ -24,10 +24,11 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'yard'
   s.add_development_dependency 'rake'
+  s.add_development_dependency 'rubocop'
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'mongoid-rspec', '~> 3.0'
 
-  s.files = Dir.glob('lib/**/*')# + %w(CHANGELOG.md LICENSE README.md
+  s.files = Dir.glob('lib/**/*') # + %w(CHANGELOG.md LICENSE README.md
   s.test_files = Dir.glob('spec/**/*')
   s.require_path = 'lib'
 end

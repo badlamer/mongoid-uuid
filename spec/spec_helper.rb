@@ -7,12 +7,12 @@ require 'mongoid-rspec'
 
 require 'rspec'
 
-if ENV["CI"]
-  require "simplecov"
-  require "coveralls"
+if ENV['CI']
+  require 'simplecov'
+  require 'coveralls'
   SimpleCov.formatter = Coveralls::SimpleCov::Formatter
   SimpleCov.start do
-    add_filter "spec"
+    add_filter 'spec'
   end
 end
 
