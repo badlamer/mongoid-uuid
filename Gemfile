@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 gemspec
 
+gem 'mongoid', '~> 5.0'
+
 group :test do
   gem "rspec"
 
