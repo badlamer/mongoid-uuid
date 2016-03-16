@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'mongoid', '>= 3.0', '< 6'
 
   s.add_development_dependency 'yard'
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rake', '~> 10'
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'mongoid-rspec', '~> 3.0'

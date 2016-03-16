@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gemspec
 
-gem 'rake'
+gem 'rake', '~> 10'
 gem 'mongoid', '~> 5.0'
 
 group :test do
