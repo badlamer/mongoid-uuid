@@ -3,7 +3,7 @@ require 'bundler/setup'
 
 require 'mongoid'
 require 'mongoid/uuid'
-require 'mongoid-rspec'
+
 
 require 'rspec'
 
