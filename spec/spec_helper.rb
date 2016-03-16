@@ -27,7 +27,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
   config.include RSpec::Matchers
-  config.include Mongoid::Matchers
+
   config.mock_with :rspec
   config.after :all do
     Mongoid::Config.purge!
