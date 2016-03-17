@@ -1,5 +1,9 @@
 language: ruby
 bundler_args: --without development
+cache:
+  - bundler
+  - apt
+
 rvm:
   - ruby-head
   - 2.0
