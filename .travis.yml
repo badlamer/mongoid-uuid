@@ -1,4 +1,7 @@
 language: ruby
+before_install:
+  - gem install bundler
+
 bundler_args: --without development
 cache:
   - bundler
