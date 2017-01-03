@@ -8,13 +8,13 @@ cache:
   - apt
 
 rvm:
-  - ruby-head
   - 2.0
   - 2.1
-  - 2.2
+  - 2.2.2
   - 2.3.0
   - jruby-19mode
   - jruby-9.0.0.0
+  - ruby-head
 services:
   - mongodb
 matrix:
@@ -22,6 +22,17 @@ matrix:
     - rvm: ruby-head
 
 gemfile:
-  - Gemfile
   - gemfiles/mongoid3.gemfile
   - gemfiles/mongoid4.gemfile
+  - gemfiles/mongoid5.gemfile
+  - Gemfile
+
+
+matrix:
+  exclude:
+      - rvm: 2.0
+        gemfile: Gemfile
+      - rvm: 2.1
+        gemfile: Gemfile
+      - rvm: jruby-19mode
+        gemfile: Gemfile

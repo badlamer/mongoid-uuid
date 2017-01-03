@@ -16,11 +16,10 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
 
   s.required_ruby_version = '>= 2.0'
-  s.required_rubygems_version = '>= 1.3.6'
   s.rubyforge_project = 'mongoid-uuid'
 
-  s.add_dependency 'uuid', '~> 2.3'
-  s.add_dependency 'mongoid', '>= 3.0', '< 7'
+  s.add_dependency 'uuid', '>= 2.3', '< 3'
+  s.add_dependency 'mongoid', '>= 6.0', '< 7'
   s.add_dependency 'rake'
 
   s.add_development_dependency 'yard'
