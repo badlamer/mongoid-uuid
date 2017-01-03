@@ -5,7 +5,7 @@ module Mongoid # :nodoc:
       extend ActiveSupport::Concern
 
       included do
-        field :uuid
+        field :uuid, type: String
         index({ uuid: 1 }, unique: true)
         before_validation :generate_uuid
         validates :uuid, uniqueness: true, uuid: true
@@ -27,7 +27,7 @@ module Mongoid # :nodoc:
 
       # Sets unique UUID unless uuid is present.
       def generate_uuid
-        self.uuid = UUID.generate if uuid.to_s.empty?
+        self.uuid = UUID.generate if uuid.blank?
       end
     end
   end
