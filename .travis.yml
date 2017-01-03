@@ -17,9 +17,7 @@ rvm:
   - ruby-head
 services:
   - mongodb
-matrix:
-  allow_failures:
-    - rvm: ruby-head
+
 
 gemfile:
   - gemfiles/mongoid3.gemfile
@@ -27,12 +25,13 @@ gemfile:
   - gemfiles/mongoid5.gemfile
   - Gemfile
 
-
 matrix:
+  allow_failures:
+    - rvm: ruby-head
   exclude:
-      - rvm: 2.0
-        gemfile: Gemfile
-      - rvm: 2.1
-        gemfile: Gemfile
-      - rvm: jruby-19mode
-        gemfile: Gemfile
+    - rvm: 2.0
+      gemfile: Gemfile
+    - rvm: 2.1
+      gemfile: Gemfile
+    - rvm: jruby-19mode
+      gemfile: Gemfile
