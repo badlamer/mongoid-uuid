@@ -32,3 +32,5 @@ matrix:
       gemfile: Gemfile
     - rvm: 2.1
       gemfile: Gemfile
+    - rvm: jruby-9.0.0.0
+      gemfile: Gemfile
