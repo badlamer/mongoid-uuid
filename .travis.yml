@@ -35,3 +35,7 @@ matrix:
       gemfile: Gemfile
     - rvm: jruby-9.0.0.0
       gemfile: Gemfile
+    - rvm: 2.4.0
+      gemfile: gemfiles/mongoid4.gemfile
+    - rvm: 2.4.0
+      gemfile: gemfiles/mongoid5.gemfile
