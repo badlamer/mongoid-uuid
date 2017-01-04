@@ -12,7 +12,6 @@ rvm:
   - 2.1
   - 2.2.2
   - 2.3.0
-  - jruby-19mode
   - jruby-9.0.0.0
   - ruby-head
 services:
@@ -32,6 +31,4 @@ matrix:
     - rvm: 2.0
       gemfile: Gemfile
     - rvm: 2.1
-      gemfile: Gemfile
-    - rvm: jruby-19mode
       gemfile: Gemfile

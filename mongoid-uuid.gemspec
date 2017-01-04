@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.description = ''
   s.license = 'MIT'
 
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.0'
   s.rubyforge_project = 'mongoid-uuid'
 
   s.add_dependency 'uuid', '>= 2.3', '< 3'
