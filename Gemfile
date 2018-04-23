@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rake'
-gem 'mongoid', '~> 6.0'
+gem 'mongoid', '~> 7.0'
 
 group :test do
   gem 'rspec'
