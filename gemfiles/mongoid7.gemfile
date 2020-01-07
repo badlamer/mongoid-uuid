@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 gemspec path: '..'
 
+gem 'mongoid', '~> 7.0'
 gem 'rake'
-gem 'mongoid', '~> 3.0'
 
 group :test do
   gem 'rspec'

@@ -1,4 +1,3 @@
-# encoding: utf-8
 require 'uuid'
 require 'mongoid'
 require 'mongoid/uuid/version'
@@ -16,4 +15,4 @@ module Mongoid
   end
 end
 
-ActiveModel::Validations.send(:include, Mongoid::Uuid::Validator)
+ActiveModel::Validations.include Mongoid::Uuid::Validator
