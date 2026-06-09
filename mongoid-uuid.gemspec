@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.4'
   s.rubyforge_project = 'mongoid-uuid'
 
-  s.add_dependency 'mongoid', '>= 6.0', '< 8'
+  s.add_dependency 'mongoid', '>= 6.0', '< 9'
   s.add_dependency 'uuid', '>= 2.3', '< 3'
 
   s.add_development_dependency 'rspec', '~> 3.0'
